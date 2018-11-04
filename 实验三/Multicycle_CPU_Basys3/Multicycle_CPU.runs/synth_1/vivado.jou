@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:30:22 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Sun Jun 24 16:37:46 2018
+# Process ID: 9628
+# Log file: E:/DigitalFundamentals/vivado/ShowMCPU/ShowMCPU.runs/synth_1/ShowMCPU.vds
+# Journal file: E:/DigitalFundamentals/vivado/ShowMCPU/ShowMCPU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ShowMCPU.tcl

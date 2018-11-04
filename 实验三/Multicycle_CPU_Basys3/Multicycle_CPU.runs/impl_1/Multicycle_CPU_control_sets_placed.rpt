@@ -1,0 +1,140 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:30:22 MDT 2014
+| Date         : Mon Jun 25 21:00:52 2018
+| Host         : DESKTOP-55DQDG3 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Multicycle_CPU_control_sets_placed.rpt
+| Design       : Multicycle_CPU
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    87 |
+| Minimum Number of register sites lost to control set restrictions |   107 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             137 |           70 |
+| No           | No                    | Yes                    |               3 |            3 |
+| No           | Yes                   | No                     |              82 |           31 |
+| Yes          | No                    | No                     |             520 |          240 |
+| Yes          | No                    | Yes                    |              39 |           16 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------------+------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+|                  Clock Signal                  |               Enable Signal              |                       Set/Reset Signal                      | Slice Load Count | Bel Load Count |
++------------------------------------------------+------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+|  ControlUnit_Instance/n_0_state_reg[2]_LDC_i_1 |                                          | ControlUnit_Instance/n_0_state_reg[2]_LDC_i_2               |                1 |              1 |
+|  ControlUnit_Instance/n_0_state_reg[1]_LDC_i_1 |                                          | ControlUnit_Instance/n_0_state_reg[1]_LDC_i_2               |                1 |              1 |
+|  ControlUnit_Instance/n_0_state_reg[0]_LDC_i_1 |                                          | ControlUnit_Instance/n_0_state_reg[0]_LDC_i_2               |                1 |              1 |
+|  ControlUnit_Instance/WrRegDSrc112_in          |                                          |                                                             |                1 |              1 |
+|  work_clk_BUFG                                 |                                          | ControlUnit_Instance/n_0_state_reg[1]_LDC_i_1               |                1 |              1 |
+|  work_clk_BUFG                                 |                                          | ControlUnit_Instance/n_0_state_reg[0]_LDC_i_1               |                1 |              1 |
+|  ControlUnit_Instance/RegWre_reg/G0            |                                          |                                                             |                1 |              1 |
+|  work_clk_BUFG                                 |                                          | ControlUnit_Instance/n_0_state_reg[2]_LDC_i_1               |                1 |              1 |
+|  ControlUnit_Instance/O1                       |                                          |                                                             |                1 |              2 |
+|  IF_Instance/IR/O1                             |                                          |                                                             |                1 |              2 |
+|  IF_Instance/IR/O84                            |                                          | ControlUnit_Instance/WrRegDSrc112_in                        |                1 |              2 |
+|  IF_Instance/IR/I82[0]                         |                                          |                                                             |                2 |              2 |
+|  ControlUnit_Instance/n_0_nextState_reg[2]_i_2 |                                          |                                                             |                1 |              3 |
+|  ControlUnit_Instance/O65[0]                   |                                          |                                                             |                1 |              3 |
+|  ControlUnit_Instance/O2                       |                                          |                                                             |                1 |              3 |
+|  ControlUnit_Instance/E[0]                     |                                          |                                                             |                2 |              4 |
+|  ControlUnit_Instance/O5[0]                    |                                          |                                                             |                2 |              5 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O79[0]             |                                                             |                4 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O80[0]             |                                                             |                5 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O81[0]             |                                                             |                2 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O82[0]             |                                                             |                2 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O83[0]             |                                                             |                2 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O84[0]             |                                                             |                4 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O76[0]             |                                                             |                2 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/E[0]               |                                                             |                3 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O22[0]             |                                                             |                3 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O25[0]             |                                                             |                2 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O26[0]             |                                                             |                2 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O27[0]             |                                                             |                3 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O28[0]             |                                                             |                2 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O29[0]             |                                                             |                3 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O30[0]             |                                                             |                2 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O31[0]             |                                                             |                4 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O32[0]             |                                                             |                4 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O34[0]             |                                                             |                3 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O35[0]             |                                                             |                3 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O36[0]             |                                                             |                5 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O37[0]             |                                                             |                5 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O41[0]             |                                                             |                3 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O38[0]             |                                                             |                4 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O39[0]             |                                                             |                4 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O40[0]             |                                                             |                3 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O42[0]             |                                                             |                3 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O43[0]             |                                                             |                4 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O44[0]             |                                                             |                4 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O45[0]             |                                                             |                5 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O46[0]             |                                                             |                3 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O47[0]             |                                                             |                4 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O48[0]             |                                                             |                4 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O49[0]             |                                                             |                3 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O50[0]             |                                                             |                6 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O51[0]             |                                                             |                3 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O52[0]             |                                                             |                4 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O53[0]             |                                                             |                3 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O54[0]             |                                                             |                5 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O55[0]             |                                                             |                5 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O56[0]             |                                                             |                4 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O57[0]             |                                                             |                4 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O58[0]             |                                                             |                3 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O59[0]             |                                                             |                5 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O60[0]             |                                                             |                4 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O61[0]             |                                                             |                5 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O62[0]             |                                                             |                4 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O63[0]             |                                                             |                3 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O64[0]             |                                                             |                5 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O65[0]             |                                                             |                5 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O67[0]             |                                                             |                3 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O68[0]             |                                                             |                4 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O69[0]             |                                                             |                4 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O70[0]             |                                                             |                4 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O71[0]             |                                                             |                3 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O72[0]             |                                                             |                6 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O73[0]             |                                                             |                3 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O74[0]             |                                                             |                5 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O75[0]             |                                                             |                3 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O66[0]             |                                                             |                4 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O77[0]             |                                                             |                5 |              8 |
+| ~work_clk_BUFG                                 | Exe_Instance/ALUoutDR/O78[0]             |                                                             |                2 |              8 |
+| ~work_clk_BUFG                                 |                                          | ControlUnit_Instance/O3                                     |                7 |             13 |
+|  InsMemRW_BUFG                                 |                                          |                                                             |               27 |             32 |
+| ~work_clk_BUFG                                 |                                          | IF_Instance/IR/O77                                          |               10 |             32 |
+| ~work_clk_BUFG                                 | InsMemRW_BUFG                            |                                                             |               17 |             32 |
+| ~work_clk_BUFG                                 |                                          | IF_Instance/IR/O78                                          |               10 |             32 |
+|  CLK_IBUF_BUFG                                 |                                          |                                                             |               13 |             39 |
+|  work_clk_BUFG                                 | ControlUnit_Instance/O12[0]              | IF_Instance/PC_Instance/PC_Generate_Instance/n_0_pc[31]_i_3 |               16 |             39 |
+| ~work_clk_BUFG                                 |                                          |                                                             |               17 |             40 |
+|  eliminationBuffet/O1                          | ID_Instance/Multiplexer3_Instance/p_0_in |                                                             |               12 |             96 |
++------------------------------------------------+------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+
+

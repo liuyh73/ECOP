@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:30:22 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Fri May 25 19:19:55 2018
+# Process ID: 4940
+# Log file: D:/Vivado_projects/Single_CPU/vivado.log
+# Journal file: D:/Vivado_projects/Single_CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:\Vivado_projects\Single_CPU\Single_CPU.xpr}
+launch_xsim -simset sim_1 -mode behavioral
+add_wave {{/Single_CPU_sim/single_cpu/ir}} 
+launch_xsim -simset sim_1 -mode behavioral
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+add_wave {{/Single_CPU_sim/single_cpu/regFile}} 
+launch_xsim -simset sim_1 -mode behavioral
+launch_xsim -simset sim_1 -mode behavioral
+launch_xsim -simset sim_1 -mode behavioral

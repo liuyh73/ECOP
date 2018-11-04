@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:30:22 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Fri Jun 29 11:33:43 2018
+# Process ID: 17696
+# Log file: D:/Vivado_projects/Multicycle_CPU_Basys3/vivado.log
+# Journal file: D:/Vivado_projects/Multicycle_CPU_Basys3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:\Vivado_projects\Multicycle_CPU_Basys3\Multicycle_CPU.xpr}
+open_hw
+connect_hw_server -host localhost -port 60001 -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183796003A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183796003A]
+disconnect_hw_server localhost
+connect_hw_server -host localhost -port 60001 -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183A27EE1A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183A27EE1A]
+disconnect_hw_server localhost

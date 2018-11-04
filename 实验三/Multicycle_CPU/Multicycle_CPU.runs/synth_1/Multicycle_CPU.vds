@@ -1,0 +1,575 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:30:22 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Mon Jun 25 00:23:15 2018
+# Process ID: 13408
+# Log file: D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.runs/synth_1/Multicycle_CPU.vds
+# Journal file: D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Multicycle_CPU.tcl
+# set_param gui.test TreeTableDev
+# set_msg_config -id {Common-41} -limit 4294967295
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a35tcpg236-1
+# set_property target_language Verilog [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_property default_lib xil_defaultlib [current_project]
+# read_verilog -library xil_defaultlib {
+#   D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/PC_Generate.v
+#   D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/PC_Add4.v
+#   D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/PC4_Jump.v
+#   D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/PC4_AddOffset.v
+#   D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Multiplexer4.v
+#   D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Register_IR.v
+#   D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Register.v
+#   D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/RegFile.v
+#   D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/PC.v
+#   D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Multiplexer3.v
+#   D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Multiplexer2.v
+#   D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/InsMem.v
+#   D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/DataMem.v
+#   D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ALU.v
+#   D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/WB.v
+#   D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Mem.v
+#   D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/IF.v
+#   D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ID.v
+#   D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Exe.v
+#   D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/DataExtend.v
+#   D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ControlUnit.v
+#   D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Multicycle_CPU.v
+# }
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/PC_Generate.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/PC_Add4.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/PC4_Jump.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/PC4_AddOffset.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Multiplexer4.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Register_IR.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Register.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/RegFile.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/PC.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Multiplexer3.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Multiplexer2.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/InsMem.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/DataMem.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ALU.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/WB.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Mem.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/IF.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ID.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Exe.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/DataExtend.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ControlUnit.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Multicycle_CPU.v]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.cache/wt [current_project]
+# set_property parent.project_dir D:/Vivado_projects/Multicycle_CPU [current_project]
+# catch { write_hwdef -file Multicycle_CPU.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top Multicycle_CPU -part xc7a35tcpg236-1
+Command: synth_design -top Multicycle_CPU -part xc7a35tcpg236-1
+
+Starting synthesis...
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+WARNING: [Synth 8-2611] redeclaration of ansi port pc is not allowed [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/PC.v:34]
+WARNING: [Synth 8-2611] redeclaration of ansi port pc is not allowed [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/IF.v:37]
+WARNING: [Synth 8-2611] redeclaration of ansi port opcode is not allowed [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ID.v:38]
+WARNING: [Synth 8-2611] redeclaration of ansi port sa is not allowed [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ID.v:42]
+WARNING: [Synth 8-2611] redeclaration of ansi port imData is not allowed [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ID.v:43]
+WARNING: [Synth 8-2611] redeclaration of ansi port addr is not allowed [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ID.v:44]
+WARNING: [Synth 8-2611] redeclaration of ansi port ReadData1_t is not allowed [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ID.v:46]
+WARNING: [Synth 8-2611] redeclaration of ansi port result is not allowed [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Exe.v:36]
+WARNING: [Synth 8-2611] redeclaration of ansi port sign is not allowed [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Exe.v:37]
+WARNING: [Synth 8-2611] redeclaration of ansi port zero is not allowed [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Exe.v:37]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 243.238 ; gain = 77.363
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Multicycle_CPU' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Multicycle_CPU.v:23]
+INFO: [Synth 8-638] synthesizing module 'ControlUnit' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ControlUnit.v:23]
+WARNING: [Synth 8-567] referenced signal 'opcode' should be on the sensitivity list [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ControlUnit.v:61]
+INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (1#1) [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ControlUnit.v:23]
+INFO: [Synth 8-638] synthesizing module 'IF' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/IF.v:23]
+INFO: [Synth 8-638] synthesizing module 'PC' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/PC.v:22]
+INFO: [Synth 8-638] synthesizing module 'PC_Generate' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/PC_Generate.v:23]
+INFO: [Synth 8-256] done synthesizing module 'PC_Generate' (2#1) [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/PC_Generate.v:23]
+INFO: [Synth 8-638] synthesizing module 'PC_Add4' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/PC_Add4.v:23]
+INFO: [Synth 8-256] done synthesizing module 'PC_Add4' (3#1) [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/PC_Add4.v:23]
+INFO: [Synth 8-638] synthesizing module 'PC4_Jump' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/PC4_Jump.v:23]
+WARNING: [Synth 8-567] referenced signal 'pc4' should be on the sensitivity list [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/PC4_Jump.v:29]
+INFO: [Synth 8-256] done synthesizing module 'PC4_Jump' (4#1) [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/PC4_Jump.v:23]
+INFO: [Synth 8-638] synthesizing module 'PC4_AddOffset' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/PC4_AddOffset.v:23]
+INFO: [Synth 8-256] done synthesizing module 'PC4_AddOffset' (5#1) [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/PC4_AddOffset.v:23]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer4' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Multiplexer4.v:23]
+INFO: [Synth 8-226] default block is never used [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Multiplexer4.v:35]
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer4' (6#1) [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Multiplexer4.v:23]
+INFO: [Synth 8-256] done synthesizing module 'PC' (7#1) [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/PC.v:22]
+INFO: [Synth 8-638] synthesizing module 'InsMem' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/InsMem.v:23]
+INFO: [Synth 8-3876] $readmem data file 'D:/Vivado_projects/Multicycle_CPU/Instructions.txt' is read successfully [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/InsMem.v:31]
+INFO: [Synth 8-256] done synthesizing module 'InsMem' (8#1) [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/InsMem.v:23]
+INFO: [Synth 8-638] synthesizing module 'Register_IR' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Register_IR.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Register_IR' (9#1) [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Register_IR.v:23]
+INFO: [Synth 8-256] done synthesizing module 'IF' (10#1) [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/IF.v:23]
+INFO: [Synth 8-638] synthesizing module 'ID' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ID.v:23]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer3' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Multiplexer3.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer3' (11#1) [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Multiplexer3.v:23]
+INFO: [Synth 8-638] synthesizing module 'RegFile' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/RegFile.v:23]
+INFO: [Synth 8-256] done synthesizing module 'RegFile' (12#1) [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/RegFile.v:23]
+INFO: [Synth 8-638] synthesizing module 'Register' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Register.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Register' (13#1) [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Register.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ID' (14#1) [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ID.v:23]
+INFO: [Synth 8-638] synthesizing module 'DataExtend' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/DataExtend.v:23]
+INFO: [Synth 8-256] done synthesizing module 'DataExtend' (15#1) [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/DataExtend.v:23]
+INFO: [Synth 8-638] synthesizing module 'Exe' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Exe.v:22]
+INFO: [Synth 8-638] synthesizing module 'Multiplexer2' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Multiplexer2.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Multiplexer2' (16#1) [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Multiplexer2.v:23]
+WARNING: [Synth 8-689] width (23) of port connection 'data2' does not match port width (32) of module 'Multiplexer2' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Exe.v:41]
+INFO: [Synth 8-638] synthesizing module 'ALU' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-226] default block is never used [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ALU.v:35]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (17#1) [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Exe' (18#1) [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Exe.v:22]
+INFO: [Synth 8-638] synthesizing module 'Mem' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Mem.v:23]
+INFO: [Synth 8-638] synthesizing module 'DataMem' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/DataMem.v:23]
+WARNING: [Synth 8-4558] Trying to implement RAM 'ram_reg' in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+RAM "ram_reg" dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'DataMem' (19#1) [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/DataMem.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Mem' (20#1) [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Mem.v:23]
+INFO: [Synth 8-638] synthesizing module 'WB' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/WB.v:23]
+INFO: [Synth 8-256] done synthesizing module 'WB' (21#1) [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/WB.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Multicycle_CPU' (22#1) [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Multicycle_CPU.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 276.039 ; gain = 110.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 276.039 ; gain = 110.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 276.039 ; gain = 110.164
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ALU.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'ExtSel_reg' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ControlUnit.v:104]
+WARNING: [Synth 8-327] inferring latch for variable 'nextState_reg' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ControlUnit.v:63]
+WARNING: [Synth 8-327] inferring latch for variable 'InsMemRW_reg' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ControlUnit.v:95]
+WARNING: [Synth 8-327] inferring latch for variable 'WrRegDSrc_reg' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ControlUnit.v:94]
+WARNING: [Synth 8-327] inferring latch for variable 'RegDst_reg' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ControlUnit.v:111]
+WARNING: [Synth 8-327] inferring latch for variable 'RegWre_reg' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ControlUnit.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUOp_reg' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ControlUnit.v:103]
+WARNING: [Synth 8-327] inferring latch for variable 'PCSrc_reg' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ControlUnit.v:113]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcA_reg' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ControlUnit.v:101]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcB_reg' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ControlUnit.v:102]
+WARNING: [Synth 8-327] inferring latch for variable 'mRD_reg' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ControlUnit.v:99]
+WARNING: [Synth 8-327] inferring latch for variable 'mWR_reg' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/ControlUnit.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'IDataOut_reg' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/InsMem.v:37]
+WARNING: [Synth 8-327] inferring latch for variable 'WriteReg_reg' [D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.srcs/sources_1/new/Multiplexer3.v:33]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input      6 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---RAMs : 
+	              992 Bit         RAMs := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 12    
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 183   
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	  12 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+	   9 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 462   
+	  12 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Multicycle_CPU 
+Detailed RTL Component Info : 
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	  12 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 2     
+	   9 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 34    
+	  12 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+	   8 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 2     
+	  14 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+Module PC_Generate 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+Module PC_Add4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module PC4_Jump 
+Detailed RTL Component Info : 
+Module PC4_AddOffset 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module Multiplexer4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
+Module InsMem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+Module Register_IR 
+Detailed RTL Component Info : 
+Module IF 
+Detailed RTL Component Info : 
+Module Multiplexer3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module RegFile 
+Detailed RTL Component Info : 
++---RAMs : 
+	              992 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module Register 
+Detailed RTL Component Info : 
+Module ID 
+Detailed RTL Component Info : 
+Module DataExtend 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module Multiplexer2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Exe 
+Detailed RTL Component Info : 
+Module DataMem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 183   
+	   2 Input      1 Bit        Muxes := 427   
+Module Mem 
+Detailed RTL Component Info : 
+Module WB 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Loading clock regions from E:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a35t/ClockRegion.xml
+Loading clock buffers from E:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a35t/ClockBuffers.xml
+Loading clock placement rules from E:/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from E:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from E:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a35t/cpg236/Package.xml
+Loading io standards from E:/Xilinx/Vivado/2014.2/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from E:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/ConfigModes.xml
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 411.000 ; gain = 245.125
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 421.965 ; gain = 256.090
+---------------------------------------------------------------------------------
+Finished Parallel Reinfer  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 421.965 ; gain = 256.090
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: 
++---------------+------------------------------------------+--------------------+----------------------+---------------+-----------------------+
+|Module Name    | RTL Object                               | Inference Criteria | Size (depth X width) | Primitives    | Hierarchical Name     | 
++---------------+------------------------------------------+--------------------+----------------------+---------------+-----------------------+
+|Multicycle_CPU | ID_Instance/RegFile_Instance/regFile_reg | Implied            | 32 X 32              | RAM32M x 12   | Multicycle_CPU/ram__1 | 
++---------------+------------------------------------------+--------------------+----------------------+---------------+-----------------------+
+
+Note: The table shows RAMs generated at current stage. Some RAM generation could be reversed due to later optimizations. Mutiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the hierarchical modules names of the RAM and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\ControlUnit_Instance/ExtSel_reg ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (ControlUnit_Instancei_0) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\ControlUnit_Instance/nextState_reg[2] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\ControlUnit_Instance/nextState_reg[1] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\ControlUnit_Instance/nextState_reg[0] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\ControlUnit_Instance/InsMemRW_reg ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\ControlUnit_Instance/WrRegDSrc_reg ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (ControlUnit_Instancei_2) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\ControlUnit_Instance/RegDst_reg[1] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\ControlUnit_Instance/RegDst_reg[0] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (RegDst_reg__0i_5) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (RegDst_reg__0i_6) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\ControlUnit_Instance/RegWre_reg ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\ControlUnit_Instance/ALUOp_reg[2] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\ControlUnit_Instance/ALUOp_reg[1] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\ControlUnit_Instance/ALUOp_reg[0] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (ALUOp_reg__0i_10) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (ALUOp_reg__0i_11) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (ALUOp_reg__0i_12) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\ControlUnit_Instance/PCSrc_reg[1] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\ControlUnit_Instance/PCSrc_reg[0] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\ControlUnit_Instance/ALUSrcA_reg ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (ControlUnit_Instancei_14) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\ControlUnit_Instance/ALUSrcB_reg ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (ControlUnit_Instancei_16) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\ControlUnit_Instance/mRD_reg ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\ControlUnit_Instance/mWR_reg ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\ControlUnit_Instance/state_reg[2] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\ControlUnit_Instance/state_reg[1] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\ControlUnit_Instance/state_reg[0] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[31] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[30] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[29] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[28] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[27] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[26] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[25] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[24] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[23] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[22] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[21] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[20] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[19] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[18] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[17] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[16] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[15] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[14] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[13] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[12] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[11] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[10] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[9] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[8] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[7] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[6] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[5] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[4] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[3] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[2] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[1] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/InsMem_Instance/IDataOut_reg[0] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[31] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[30] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[29] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[28] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[27] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[26] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[25] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[24] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[23] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[22] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[21] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[20] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[19] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[18] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[17] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[16] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[15] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[14] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[13] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[12] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[11] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[10] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[9] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[8] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[7] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[6] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[5] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[4] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[3] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[2] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[1] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/IR/store_reg[0] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/PC_Instance/PC_Generate_Instance/pc_reg[31] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/PC_Instance/PC_Generate_Instance/pc_reg[30] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/PC_Instance/PC_Generate_Instance/pc_reg[29] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/PC_Instance/PC_Generate_Instance/pc_reg[28] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/PC_Instance/PC_Generate_Instance/pc_reg[27] ) is unused and will be removed from module Multicycle_CPU.
+WARNING: [Synth 8-3332] Sequential element (\IF_Instance/PC_Instance/PC_Generate_Instance/pc_reg[26] ) is unused and will be removed from module Multicycle_CPU.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 421.965 ; gain = 256.090
+---------------------------------------------------------------------------------
+Finished Parallel Area Opt  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 421.965 ; gain = 256.090
+Finished Parallel Section  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 421.965 ; gain = 256.090
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 421.965 ; gain = 256.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 421.965 ; gain = 256.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 421.965 ; gain = 256.090
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 421.965 ; gain = 256.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 421.965 ; gain = 256.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 421.965 ; gain = 256.090
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 807 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 421.965 ; gain = 256.090
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+54 Infos, 128 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 484.461 ; gain = 297.250
+# write_checkpoint Multicycle_CPU.dcp
+# report_utilization -file Multicycle_CPU_utilization_synth.rpt -pb Multicycle_CPU_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 484.461 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 25 00:23:27 2018...

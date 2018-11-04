@@ -1,0 +1,83 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:30:22 MDT 2014
+| Date         : Sun Jun 24 16:39:01 2018
+| Host         : XB-20170501VHMB running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file ShowMCPU_control_sets_placed.rpt
+| Design       : ShowMCPU
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    30 |
+| Minimum Number of register sites lost to control set restrictions |    15 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              89 |           35 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              80 |           34 |
+| Yes          | No                    | No                     |             168 |          165 |
+| Yes          | No                    | Yes                    |              32 |           16 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+---------------------------------+-------------------------------------------+------------------+----------------+
+|       Clock Signal      |          Enable Signal          |              Set/Reset Signal             | Slice Load Count | Bel Load Count |
++-------------------------+---------------------------------+-------------------------------------------+------------------+----------------+
+|  nolabel_line126/IR/O10 |                                 |                                           |                1 |              2 |
+|  CLK_IBUF_BUFG          |                                 |                                           |                2 |              4 |
+| ~MCUP_clk_BUFG          | nolabel_line126/ALUoutDR/O28[0] |                                           |                8 |              8 |
+| ~MCUP_clk_BUFG          | nolabel_line126/ALUoutDR/O27[0] |                                           |                8 |              8 |
+| ~MCUP_clk_BUFG          | nolabel_line126/ALUoutDR/O25[0] |                                           |                7 |              8 |
+| ~MCUP_clk_BUFG          | nolabel_line126/ALUoutDR/O24[0] |                                           |                8 |              8 |
+| ~MCUP_clk_BUFG          | nolabel_line126/ALUoutDR/O23[0] |                                           |                8 |              8 |
+| ~MCUP_clk_BUFG          | nolabel_line126/ALUoutDR/O26[0] |                                           |                8 |              8 |
+| ~MCUP_clk_BUFG          | nolabel_line126/ALUoutDR/O22[0] |                                           |                7 |              8 |
+| ~MCUP_clk_BUFG          | nolabel_line126/ALUoutDR/O21[0] |                                           |                8 |              8 |
+| ~MCUP_clk_BUFG          | nolabel_line126/ALUoutDR/O20[0] |                                           |                7 |              8 |
+| ~MCUP_clk_BUFG          | nolabel_line126/ALUoutDR/O19[0] |                                           |                8 |              8 |
+| ~MCUP_clk_BUFG          | nolabel_line126/ALUoutDR/O18[0] |                                           |                8 |              8 |
+| ~MCUP_clk_BUFG          | nolabel_line126/ALUoutDR/O17[0] |                                           |                8 |              8 |
+| ~MCUP_clk_BUFG          | nolabel_line126/ALUoutDR/O16[0] |                                           |                8 |              8 |
+| ~MCUP_clk_BUFG          | nolabel_line126/ALUoutDR/O15[0] |                                           |                8 |              8 |
+| ~MCUP_clk_BUFG          | nolabel_line126/ALUoutDR/O14[0] |                                           |                8 |              8 |
+| ~MCUP_clk_BUFG          | nolabel_line126/ALUoutDR/O13[0] |                                           |                8 |              8 |
+| ~MCUP_clk_BUFG          | nolabel_line126/ALUoutDR/O12[0] |                                           |                8 |              8 |
+| ~MCUP_clk_BUFG          | nolabel_line126/ALUoutDR/O11[0] |                                           |                8 |              8 |
+| ~MCUP_clk_BUFG          | nolabel_line126/ALUoutDR/E[0]   |                                           |                8 |              8 |
+| ~MCUP_clk_BUFG          | nolabel_line126/ALUoutDR/O6[0]  |                                           |                8 |              8 |
+| ~MCUP_clk_BUFG          | nolabel_line126/ALUoutDR/O9[0]  |                                           |                8 |              8 |
+| ~CLK_IBUF_BUFG          |                                 |                                           |                4 |             13 |
+|  MCUP_clk_BUFG          |                                 | nolabel_line126/ALUoutDR/n_0_store[7]_i_1 |                7 |             16 |
+|  MCUP_clk_BUFG          |                                 | nolabel_line126/IR/O20                    |               18 |             32 |
+|  MCUP_clk_BUFG          |                                 | nolabel_line126/IR/O33                    |                9 |             32 |
+|  MCUP_clk_BUFG          | nolabel_line126/IR/E[0]         | nolabel_line126/pc/n_0_curPC[31]_i_3      |               16 |             32 |
+|  MCUP_clk_BUFG          |                                 |                                           |               28 |             70 |
+|  f/O1                   | nolabel_line126/cu/p_0_in       |                                           |               12 |             96 |
++-------------------------+---------------------------------+-------------------------------------------+------------------+----------------+
+
+

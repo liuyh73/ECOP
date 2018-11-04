@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:30:22 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Sun Jun 24 22:51:55 2018
+# Process ID: 6688
+# Log file: D:/Vivado_projects/Multicycle_CPU_Basys3_Bakeup/Multicycle_CPU.runs/impl_1/Multicycle_CPU.vdi
+# Journal file: D:/Vivado_projects/Multicycle_CPU_Basys3_Bakeup/Multicycle_CPU.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Multicycle_CPU.tcl -notrace

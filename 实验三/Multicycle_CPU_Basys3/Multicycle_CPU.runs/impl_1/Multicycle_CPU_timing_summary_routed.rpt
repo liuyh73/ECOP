@@ -1,0 +1,401 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:30:22 MDT 2014
+| Date         : Mon Jun 25 21:01:17 2018
+| Host         : DESKTOP-55DQDG3 running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -warn_on_violation -file Multicycle_CPU_timing_summary_routed.rpt -pb Multicycle_CPU_timing_summary_routed.pb
+| Design       : Multicycle_CPU
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRELIMINARY 1.12 2014-03-13
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking unexpandable_clocks
+13. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 39 register/latch pins with no clock driven by root clock pin: CLK (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: RST (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ControlUnit_Instance/ALUOp_reg[0]/G (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ControlUnit_Instance/ALUOp_reg[1]/G (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ControlUnit_Instance/ALUOp_reg[2]/G (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ControlUnit_Instance/ALUSrcA_reg/G (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ControlUnit_Instance/ALUSrcB_reg/G (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: ControlUnit_Instance/ExtSel_reg/G (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: ControlUnit_Instance/InsMemRW_reg/G (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: ControlUnit_Instance/RegDst_reg[0]/G (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: ControlUnit_Instance/RegDst_reg[1]/G (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: ControlUnit_Instance/nextState_reg[0]/G (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: ControlUnit_Instance/nextState_reg[1]/G (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: ControlUnit_Instance/nextState_reg[2]/G (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: ControlUnit_Instance/state_reg[0]_LDC/G (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: ControlUnit_Instance/state_reg[0]_P/C (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: ControlUnit_Instance/state_reg[1]_LDC/G (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: ControlUnit_Instance/state_reg[1]_P/C (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: ControlUnit_Instance/state_reg[2]_LDC/G (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: ControlUnit_Instance/state_reg[2]_P/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[0]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[10]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[11]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[12]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[13]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[14]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[15]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[16]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[17]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[18]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[19]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[1]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[20]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[21]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[22]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[23]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[24]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[25]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[26]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[27]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[28]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[29]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[2]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[30]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[31]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[3]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[4]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[5]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[6]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[7]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[8]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/ADR/store_reg[9]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[0]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[10]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[11]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[12]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[13]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[14]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[15]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[16]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[17]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[18]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[19]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[1]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[20]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[21]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[22]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[23]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[24]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[25]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[26]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[27]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[28]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[29]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[2]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[30]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[31]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[3]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[4]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[5]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[6]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[7]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[8]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: ID_Instance/BDR/store_reg[9]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: IF_Instance/IR/store_reg[0]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: IF_Instance/IR/store_reg[10]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: IF_Instance/IR/store_reg[11]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: IF_Instance/IR/store_reg[12]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: IF_Instance/IR/store_reg[13]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: IF_Instance/IR/store_reg[14]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: IF_Instance/IR/store_reg[15]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: IF_Instance/IR/store_reg[1]/C (HIGH)
+
+ There are 17 register/latch pins with no clock driven by root clock pin: IF_Instance/IR/store_reg[26]/C (HIGH)
+
+ There are 17 register/latch pins with no clock driven by root clock pin: IF_Instance/IR/store_reg[27]/C (HIGH)
+
+ There are 19 register/latch pins with no clock driven by root clock pin: IF_Instance/IR/store_reg[28]/C (HIGH)
+
+ There are 19 register/latch pins with no clock driven by root clock pin: IF_Instance/IR/store_reg[29]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: IF_Instance/IR/store_reg[2]/C (HIGH)
+
+ There are 19 register/latch pins with no clock driven by root clock pin: IF_Instance/IR/store_reg[30]/C (HIGH)
+
+ There are 19 register/latch pins with no clock driven by root clock pin: IF_Instance/IR/store_reg[31]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: IF_Instance/IR/store_reg[3]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: IF_Instance/IR/store_reg[4]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: IF_Instance/IR/store_reg[5]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: IF_Instance/IR/store_reg[6]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: IF_Instance/IR/store_reg[7]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: IF_Instance/IR/store_reg[8]/C (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: IF_Instance/IR/store_reg[9]/C (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: WriteReg_reg[4]_i_5/G (HIGH)
+
+ There are 775 register/latch pins with no clock driven by root clock pin: eliminationBuffet/delay1_reg/C (HIGH)
+
+ There are 775 register/latch pins with no clock driven by root clock pin: eliminationBuffet/delay2_reg/C (HIGH)
+
+ There are 775 register/latch pins with no clock driven by root clock pin: eliminationBuffet/delay3_reg/C (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: pc_reg[31]_i_13/G (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: store_reg[0]_i_18/G (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: store_reg[0]_i_37/G (HIGH)
+
+
+2. checking constant clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 2098 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 5 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 14 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but has a clock definition.
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There is 1 combinational loop in the design. (HIGH)
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking unexpandable_clocks
+--------------------------------
+ There are 0 unexpandable clock pairs.
+
+
+13. checking latch_loops
+------------------------
+ There are 2 combinational latch loops in the design through latch input (HIGH)
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+         NA           NA                     NA                   NA           NA           NA                     NA                   NA           NA           NA                      NA                    NA  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+

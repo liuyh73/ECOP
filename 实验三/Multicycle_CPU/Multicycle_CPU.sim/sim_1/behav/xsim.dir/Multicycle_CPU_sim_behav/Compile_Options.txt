@@ -1,0 +1,1 @@
+--debug "typical" --relax -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "Multicycle_CPU_sim_behav" --prj "D:/Vivado_projects/Multicycle_CPU/Multicycle_CPU.sim/sim_1/behav/Multicycle_CPU_sim.prj" "xil_defaultlib.Multicycle_CPU_sim" "xil_defaultlib.glbl" 

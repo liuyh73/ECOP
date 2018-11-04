@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:30:22 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Fri Jun 29 11:32:45 2018
+# Process ID: 3648
+# Log file: D:/Vivado_projects/Multicycle_CPU/vivado.log
+# Journal file: D:/Vivado_projects/Multicycle_CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:\Vivado_projects\Multicycle_CPU\Multicycle_CPU.xpr}
+launch_xsim -simset sim_1 -mode behavioral
+close_sim

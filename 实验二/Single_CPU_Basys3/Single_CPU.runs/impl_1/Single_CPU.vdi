@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:30:22 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Fri May 25 11:34:30 2018
+# Process ID: 11572
+# Log file: D:/Vivado_projects/Single_CPU_Basys3/Single_CPU.runs/impl_1/Single_CPU.vdi
+# Journal file: D:/Vivado_projects/Single_CPU_Basys3/Single_CPU.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Single_CPU.tcl -notrace
+Command: open_checkpoint Single_CPU_routed.dcp
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.2
+Loading clock regions from E:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a35t/ClockRegion.xml
+Loading clock buffers from E:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a35t/ClockBuffers.xml
+Loading clock placement rules from E:/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from E:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from E:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a35t/cpg236/Package.xml
+Loading io standards from E:/Xilinx/Vivado/2014.2/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from E:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/ConfigModes.xml
+Parsing XDC File [D:/Vivado_projects/Single_CPU_Basys3/Single_CPU.runs/impl_1/.Xil/Vivado-11572-DESKTOP-55DQDG3/dcp/Single_CPU.xdc]
+Finished Parsing XDC File [D:/Vivado_projects/Single_CPU_Basys3/Single_CPU.runs/impl_1/.Xil/Vivado-11572-DESKTOP-55DQDG3/dcp/Single_CPU.xdc]
+Reading XDEF placement.
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.241 . Memory (MB): peak = 454.355 ; gain = 0.000
+Restoring placement.
+Restored 842 out of 842 XDEF sites from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+INFO: [Project 1-484] Checkpoint was created with build 932637
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command write_bitstream
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 15 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./Single_CPU.bit...
+Writing bitstream ./Single_CPU.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] 'D:/Vivado_projects/Single_CPU_Basys3/Single_CPU.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Fri May 25 11:35:07 2018. For additional details about this file, please refer to the WebTalk help file at E:/Xilinx/Vivado/2014.2/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 794.109 ; gain = 339.754
+INFO: [Common 17-206] Exiting Vivado at Fri May 25 11:35:07 2018...

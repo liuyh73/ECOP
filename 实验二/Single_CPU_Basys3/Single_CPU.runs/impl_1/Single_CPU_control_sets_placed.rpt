@@ -1,0 +1,124 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:30:22 MDT 2014
+| Date         : Thu May 24 23:30:20 2018
+| Host         : DESKTOP-55DQDG3 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Single_CPU_control_sets_placed.rpt
+| Design       : Single_CPU
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    71 |
+| Minimum Number of register sites lost to control set restrictions |    37 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              59 |           25 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               1 |            1 |
+| Yes          | No                    | No                     |             488 |          319 |
+| Yes          | No                    | Yes                    |               7 |            2 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+---------------------+-------------------+------------------+----------------+
+|          Clock Signal         |    Enable Signal    |  Set/Reset Signal | Slice Load Count | Bel Load Count |
++-------------------------------+---------------------+-------------------+------------------+----------------+
+|  pc/O2                        |                     |                   |                1 |              1 |
+|  pc/O2                        |                     | pc/O83            |                1 |              1 |
+|  pc/O70                       |                     |                   |                1 |              1 |
+|  controlUnit/DBDataSrc_reg/G0 |                     |                   |                1 |              1 |
+|  pc/I135[0]                   |                     |                   |                1 |              2 |
+|  controlUnit/O9[0]            |                     |                   |                5 |              7 |
+|  work_clk_BUFG                | pc/PCWre            | pc/n_0_ext[7]_i_2 |                2 |              7 |
+| ~work_clk_BUFG                | controlUnit/O105[0] |                   |                5 |              8 |
+|  pc/E[0]                      |                     |                   |                4 |              8 |
+| ~work_clk_BUFG                | controlUnit/O90[0]  |                   |                4 |              8 |
+| ~work_clk_BUFG                | controlUnit/O91[0]  |                   |                4 |              8 |
+| ~work_clk_BUFG                | controlUnit/O92[0]  |                   |                6 |              8 |
+| ~work_clk_BUFG                | controlUnit/O93[0]  |                   |                4 |              8 |
+| ~work_clk_BUFG                | controlUnit/O94[0]  |                   |                5 |              8 |
+| ~work_clk_BUFG                | controlUnit/O95[0]  |                   |                6 |              8 |
+| ~work_clk_BUFG                | controlUnit/O96[0]  |                   |                7 |              8 |
+| ~work_clk_BUFG                | controlUnit/O97[0]  |                   |                6 |              8 |
+| ~work_clk_BUFG                | controlUnit/O98[0]  |                   |                6 |              8 |
+| ~work_clk_BUFG                | controlUnit/O99[0]  |                   |                5 |              8 |
+| ~work_clk_BUFG                | controlUnit/O81[0]  |                   |                4 |              8 |
+| ~work_clk_BUFG                | controlUnit/O79[0]  |                   |                5 |              8 |
+| ~work_clk_BUFG                | controlUnit/O78[0]  |                   |                8 |              8 |
+| ~work_clk_BUFG                | controlUnit/O75[0]  |                   |                5 |              8 |
+| ~work_clk_BUFG                | controlUnit/O74[0]  |                   |                3 |              8 |
+| ~work_clk_BUFG                | controlUnit/O73[0]  |                   |                4 |              8 |
+| ~work_clk_BUFG                | controlUnit/O72[0]  |                   |                3 |              8 |
+| ~work_clk_BUFG                | controlUnit/O69[0]  |                   |                5 |              8 |
+| ~work_clk_BUFG                | controlUnit/O34[0]  |                   |                5 |              8 |
+| ~work_clk_BUFG                | controlUnit/O33[0]  |                   |                5 |              8 |
+| ~work_clk_BUFG                | controlUnit/O32[0]  |                   |                5 |              8 |
+| ~work_clk_BUFG                | controlUnit/O31[0]  |                   |                5 |              8 |
+| ~work_clk_BUFG                | controlUnit/O152[0] |                   |                5 |              8 |
+| ~work_clk_BUFG                | controlUnit/O151[0] |                   |                6 |              8 |
+| ~work_clk_BUFG                | controlUnit/O150[0] |                   |                3 |              8 |
+| ~work_clk_BUFG                | controlUnit/O149[0] |                   |                4 |              8 |
+| ~work_clk_BUFG                | controlUnit/O147[0] |                   |                3 |              8 |
+| ~work_clk_BUFG                | controlUnit/O138[0] |                   |                8 |              8 |
+| ~work_clk_BUFG                | controlUnit/O137[0] |                   |                4 |              8 |
+| ~work_clk_BUFG                | controlUnit/O136[0] |                   |                5 |              8 |
+| ~work_clk_BUFG                | controlUnit/O135[0] |                   |                8 |              8 |
+| ~work_clk_BUFG                | controlUnit/O134[0] |                   |                7 |              8 |
+| ~work_clk_BUFG                | controlUnit/O133[0] |                   |                8 |              8 |
+| ~work_clk_BUFG                | controlUnit/O130[0] |                   |                6 |              8 |
+| ~work_clk_BUFG                | controlUnit/O129[0] |                   |                6 |              8 |
+| ~work_clk_BUFG                | controlUnit/O128[0] |                   |                6 |              8 |
+| ~work_clk_BUFG                | controlUnit/O127[0] |                   |                5 |              8 |
+| ~work_clk_BUFG                | controlUnit/O126[0] |                   |                7 |              8 |
+| ~work_clk_BUFG                | controlUnit/O125[0] |                   |                6 |              8 |
+| ~work_clk_BUFG                | controlUnit/O124[0] |                   |                6 |              8 |
+| ~work_clk_BUFG                | controlUnit/O123[0] |                   |                5 |              8 |
+| ~work_clk_BUFG                | controlUnit/O117[0] |                   |                6 |              8 |
+| ~work_clk_BUFG                | controlUnit/O116[0] |                   |                7 |              8 |
+| ~work_clk_BUFG                | controlUnit/O115[0] |                   |                5 |              8 |
+| ~work_clk_BUFG                | controlUnit/O114[0] |                   |                4 |              8 |
+| ~work_clk_BUFG                | controlUnit/O112[0] |                   |                6 |              8 |
+| ~work_clk_BUFG                | controlUnit/O111[0] |                   |                5 |              8 |
+| ~work_clk_BUFG                | controlUnit/O110[0] |                   |                5 |              8 |
+| ~work_clk_BUFG                | controlUnit/O109[0] |                   |                3 |              8 |
+| ~work_clk_BUFG                | controlUnit/O108[0] |                   |                8 |              8 |
+| ~work_clk_BUFG                | controlUnit/O107[0] |                   |                8 |              8 |
+| ~work_clk_BUFG                | controlUnit/O106[0] |                   |                6 |              8 |
+| ~work_clk_BUFG                | controlUnit/O113[0] |                   |                5 |              8 |
+| ~work_clk_BUFG                | controlUnit/O104[0] |                   |                4 |              8 |
+| ~work_clk_BUFG                | controlUnit/O103[0] |                   |                5 |              8 |
+| ~work_clk_BUFG                | controlUnit/O102[0] |                   |                4 |              8 |
+| ~work_clk_BUFG                | controlUnit/O101[0] |                   |                3 |              8 |
+| ~work_clk_BUFG                | controlUnit/O100[0] |                   |                4 |              8 |
+| ~work_clk_BUFG                | controlUnit/O35[0]  |                   |                5 |              8 |
+| ~work_clk_BUFG                | controlUnit/O36[0]  |                   |                3 |              8 |
+|  clock_IBUF_BUFG              |                     |                   |               12 |             39 |
+|  eliminationBuffet/O1         | pc/p_0_in           |                   |               12 |             96 |
++-------------------------------+---------------------+-------------------+------------------+----------------+
+
+
